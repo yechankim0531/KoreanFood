@@ -1,0 +1,63 @@
+.header__nav{
+    display: flex;
+   
+    overflow: hidden;  /*when there is overflow of the size content is hidden */
+}
+
+.header__logo{
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo-overlay{
+    position: absolute;
+    inset: 0; 
+    width: 100%;
+    background-color: var(--primary-color);  /* Uses variable to choose color*/
+    z-index: -1;
+}
+
+.header__logo h4{
+    padding-left: 30px;  /* padding on the left size*/
+
+    color: #fff;
+    font-size: 23px;
+    text-transform: lowercase;  /*text is all lowercase, can be all uppercase too */
+    font-family: var(--plus-jakarta-sans);   
+    opacity: 1;
+}
+
+.header__menu, .header__menu-mobile {
+    padding: 20px;
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 64px;    /* gap between the li*/
+    justify-content: flex-end;
+    list-style-type: none;
+
+}
+
+.header__menu li{
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;     /* when hover over header menu class and child is li it will have cursor*/
+    line-height: 20px;
+}
+
+.header__menu li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .header__menu-mobile {
+    display: none;
+    gap: 20px;
+  
+    position: relative;
+  }
